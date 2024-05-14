@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Navigation Dotted Hover Effect</title>
+  <link rel="canonical" href="https://codepen.io/WhisnuYs/pen/XWdpdGP">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #272727;
+      font-family: "Montserrat", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; /* Stack items vertically */
+      height: 100vh;
+      text-align: center; /* Center text inside the text-container */
+    }
+
+    .name-container {
+      color: #f6f4e6;
+      max-width: 800px;
+      margin-bottom: 0.1px; /* Adjust spacing between text and buttons */
+      font-size: 2.3em; /* Adjust this value to make the text bigger */
+    }
+
+    .info-container {
+      color: #f6f4e6;
+      max-width: 800px;
+      margin-bottom: 20px; /* Adjust spacing between text and buttons */
+      font-size: 1em; /* Adjust this value to make the text smaller */
+    }
+
+    .navMenu {
+      display: flex;
+      position: relative;
+    }
+
+    .navMenu a {
+      color: #f6f4e6;
+      text-decoration: none;
+      font-size: 1.2em;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin: 0 10px; /* Add margin to give space between buttons */
+      transition: all 0.2s ease-in-out;
+    }
+
+    .navMenu a:hover {
+      color: #00B0F0;
+    }
+
+    .navMenu .dot {
+      width: 6px;
+      height: 6px;
+      background: #00B0F0;
+      border-radius: 50%;
+      position: absolute;
+      bottom: -10px;
+      opacity: 0;
+      transform: translateX(30px);
+      transition: all 0.2s ease-in-out;
+    }
+
+    .navMenu a:nth-child(1):hover ~ .dot {
+      transform: translateX(42px);
+      opacity: 1;
+    }
+
+    .navMenu a:nth-child(2):hover ~ .dot {
+      transform: translateX(230px); /* Adjusted according to margin */
+      opacity: 1;
+    }
+
+    .navMenu a:nth-child(3):hover ~ .dot {
+      transform: translateX(530px); /* Adjusted according to margin */
+      opacity: 1;
+    }
+
+    .navMenu a:nth-child(4):hover ~ .dot {
+      transform: translateX(850px); /* Adjusted according to margin */
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body translate="no">
+  <div class="name-container">
+    MOHAMAD AFIZI BIN JAMAL
+  </div>
+  <div class="info-container">
+    Kuala Lumpur | +60135225822 | fizzyjamal@gmail.com
+  </div>
+  <nav class="navMenu">
+    <a href="home.html" target="home">Home</a>
+    <a href="proport.html" target="home">Professional Portfolio</a>
+    <a href="projsam.html" target="home">Projects / Work Samples</a>
+    <a href="prodev.html" target="home">Professional Development</a>
+    <div class="dot"></div>
+  </nav>
+</body>
+</html>

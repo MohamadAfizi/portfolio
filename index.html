@@ -3,15 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohamad Afizi Portfolio</title>
-    <!-- Standard favicon for most browsers -->
+    <title>Mohamad Afizi's Portfolio</title>
     <link rel="icon" href="media/favicon.ico" type="image/x-icon">
-    
-    <!-- Apple touch icon for Safari on iOS -->
     <link rel="apple-touch-icon" href="media/apple-touch-icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        header {
+            flex: 0 1 auto;
+            width: 100%;
+            height: 150px; /* Adjust height as needed */
+        }
+        main {
+            flex: 1 1 auto;
+            width: 100%;
+            overflow: auto;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, GitHub!</h1>
-    <p>This is a super simple HTML file for testing in GitHub.08/05/2024 </p>
+    <header>
+        <iframe src="topnav.html" name="topnav"></iframe>
+    </header>
+    <main>
+        <iframe src="home.html" name="home"></iframe>
+    </main>
 </body>
 </html>
