@@ -1,45 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohamad Afizi's Portfolio</title>
-    <link rel="icon" href="media/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="media/apple-touch-icon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Open Sans', sans-serif;
-            background-color: black;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-        }
-        header {
-            flex: 0 1 auto;
-            width: 100%;
-            height: 150px; /* Adjust height as needed */
-        }
-        main {
-            flex: 1 1 auto;
-            width: 100%;
-            overflow: auto;
-        }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamad Afizi's Portfolio</title>
+  <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="media/apple-touch-icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: flex;
+      height: 100vh;
+      overflow: hidden; /* Prevents content overflow */
+    }
+    .sidepanel {
+      flex: 0 0 27%;
+      background-color: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow-y: auto; /* Enable vertical scrolling for the sidepanel */
+    }
+    .sidepanel img {
+      width: 250px;
+      border-radius: 50%;
+    }
+    .sidepanel h1 {
+      font-size: 28px; /* Changed font size to 28px */
+      margin: 15px 0;
+    }
+    .sidepanel h2 {
+      font-size: 14px;
+      margin: 5px 0;
+    }
+    .sidepanel p {
+      margin: 5px 0;
+    }
+    .sidepanel a {
+      text-decoration: none;
+      color: #333;
+      padding: 5px 10px;
+      border: 1px solid #333;
+      border-radius: 5px;
+      font-size: 12px;
+    }
+    .sidepanel a:hover {
+      background-color: #333;
+      color: #fff;
+    }
+    .sidepanel p.location {
+      font-weight: normal;
+      margin-top: -10px;
+    }
+    .content {
+      flex: 1;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      overflow-y: auto; /* Enable vertical scrolling for the content */
+    }
+    .navigation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .navigation a {
+      text-decoration: none;
+      color: #333;
+      padding: 5px 10px;
+      border: 1px solid #333;
+      border-radius: 5px;
+      margin: 5px 10px;
+      font-size: 12px;
+      text-align: center;
+    }
+    .navigation a:hover {
+      background-color: #333;
+      color: #fff;
+    }
+    .navigation h2 {
+      margin: 0;
+    }
+    .section-title {
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    @media only screen and (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .sidepanel {
+        flex: 0 0 auto;
+      }
+      .navigation {
+        justify-content: center;
+      }
+    }
+    /* Removed separator styles */
+  </style>
 </head>
 <body>
-    <header>
-        <iframe src="topnav.html" name="topnav"></iframe>
-    </header>
-    <main>
-        <iframe src="home.html" name="home"></iframe>
-    </main>
+  <div class="container">
+    <div class="sidepanel">
+      <img src="media/apple-touch-icon.png" alt="Profile Photo">
+      <h1>Mohamad Afizi Bin Jamal</h1>
+      <p class="location">Kuala Lumpur, Malaysia</p>
+      <p>fizzyjamal@gmail.com | +60135225822</p>
+      <a href="your_resume_link_here" download>Resume</a> <!-- Replace "your_resume_link_here" with your actual resume link -->
+    </div>
+    <div class="content">
+      <div class="navigation">
+        <a href="#projects"><h2 class="underline">Projects / Work Sample</h2></a>
+        <a href="#portfolios"><h2 class="underline">Portfolios</h2></a>
+        <a href="#development"><h2 class="underline">Professional Development</h2></a>
+        <a href="#about"><h2 class="underline">About Me</h2></a>
+      </div>
+      <div id="projects">
+        <h2 class="underline">Projects / Work Sample</h2>
+        <p><b>Portfolio Website</b></p>
+        <img src="Photo" alt="Portfolio Website Photo">
+        <p>Description</p>
+      </div>
+      <div id="portfolios">
+        <h2 class="underline">Portfolios</h2>
+        <div class="section-title bold-bigger">Academic Projects</div>
+        
+        <!-- Project 1 -->
+        <p><b>Project 1</b></p>
+        <img src="Photo" alt="Photo">
+        <p>Description</p>
+        
+        <!-- Project 2 -->
+        <p><b>Project 2</b></p>
+        <img src="Photo" alt="Photo">
+        <p>Description</p>
+        
+        <!-- Project 3 -->
+        <p><b>Project 3</b></p>
+        <img src="Photo" alt="Photo">
+        <p>Description</p>
+        
+        <!-- Project 4 -->
+        <p><b>Project 4</b></p>
+        <img src="Photo" alt="Photo">
+        <p>Description</p>
+        
+        <!-- Project 5 -->
+        <p><b>Project 5</b></p>
+        <img src="Photo" alt="Photo">
+        <p>Description</p>
+        
+        <!-- Project 6 -->
+        <p><b>Project 6</b></p>
+        <img src="Photo" alt="Photo">
+        <p>Description</p>
+        
+        <!-- Project 7 -->
+        <p><b>Project 7</b></p>
+        <img src="Photo" alt="Photo">
+        <p>Description</p>
+        
+        <!-- Project 8 -->
+        <p><b>Project 8</b></p>
+        <img src="Photo" alt="Photo">
+        <p>Description</p>
+        
+        <!-- Project 9 -->
+        <p><b>Project 9</b></p>
+        <img src="Photo" alt="Photo">
+        <p>Description</p>
+        
+        <!-- Project 10 -->
+        <p><b>Project 10</b></p>
+        <img src="Photo" alt="Photo">
+        <p>Description</p>
+        
+        <!-- Project 11 -->
+        <p><b>Project 11</b></p>
+        <img src="Photo" alt="Photo">
+        <p>Description</p>
+        
+        <!-- Project 12 -->
+        <p><b>Project 12</b></p>
+        <img src="Photo" alt="Photo">
+        <p>Description</p>
+        
+        <!-- Project 13 -->
+        <p><b>Project 13</b></p>
+        <img src="Photo" alt="Photo">
+        <p>Description</p>
+        
+        <!-- Project 14 -->
+        <p><b>Project 14</b></p>
+        <img src="Photo" alt="Photo">
+        <p>Description</p>
+        
+        <!-- Project 15 -->
+        <p><b>Project 15</b></p>
+        <img src="Photo" alt="Photo">
+        <p>Description</p>
+        
+        <!-- Project 16 -->
+        <p><b>Project 16</b></p>
+        <img src="Photo" alt="Photo">
+        <p>Description</p>
+        
+        <!-- Project 17 -->
+        <p><b>Project 17</b></p>
+        <img src="Photo" alt="Photo">
+        <p>Description</p>
+      </div>
+      <!-- Add other sections like Professional Development, About Me, etc. -->
+    </div>
+  </div>
 </body>
 </html>
