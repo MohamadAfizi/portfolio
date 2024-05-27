@@ -116,6 +116,43 @@
       height: auto; /* Maintains aspect ratio */
       width: 200px; /* Adjusted width to make smaller */
     }
+
+    /* Tab styles */
+    .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+      margin-bottom: 20px;
+    }
+
+    /* Style the buttons that are used to open the tab content */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #ddd;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: #ccc;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
   </style>
 </head>
 <body>
@@ -125,7 +162,7 @@
       <h1>Mohamad Afizi Bin Jamal</h1>
       <p class="location">Kuala Lumpur, Malaysia</p>
       <p>fizzyjamal@gmail.com | +60135225822</p>
-      <a href="<a href="https://raw.githubusercontent.com/MohamadAfizi/portfolio/master/media/Resume_MohamadAfizi.pdf" download>Resume</a><!-- Replace "your_resume_link_here" with your actual resume link -->
+      <a href="https://raw.githubusercontent.com/MohamadAfizi/portfolio/master/media/Resume_MohamadAfizi.pdf" download>Resume</a><!-- Replace "your_resume_link_here" with your actual resume link -->
     </div>
     <div class="content">
       <div class="navigation">
@@ -142,12 +179,17 @@
       </div>
       <div id="portfolios">
         <h2 class="underline">Portfolios</h2>
-        <div class="section-title">Technical Skills</div>
-        
-        <!-- Database Officer -->
-        <p>Database Support Officer</p>
-        <img src="media/salesforce.png" alt="salesforce">
-        <h3>Salesforce</h3>
+        <!-- Add tabs -->
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'tab1')">Salesforce</button>
+          <button class="tablinks" onclick="openTab(event, 'tab2')">Evergiving</button>
+          <button class="tablinks" onclick="openTab(event, 'tab3')">Civis</button>
+          <button class="tablinks" onclick="openTab(event, 'tab4')">Asana</button>
+        </div>
+        <!-- Add content for each tab -->
+        <div id="tab1" class="tabcontent">
+          <h3>Salesforce</h3>
+          <p><img src="media/salesforce.png" alt="salesforce">
         <p><ul>
   <li><strong>Data Management:</strong> Efficiently create, update, and manage records in Salesforce. This includes data entry, record editing, and maintaining data quality.</li>
   <li><strong>Customization:</strong> Capable of customizing Salesforce Classic to meet specific business needs. This includes creating custom fields, objects, and page layouts. Plus, able to design and customize reports and dashboards.</li>
@@ -155,61 +197,37 @@
   <li><strong>Lead and Opportunity Management:</strong> Managed leads and opportunities, including lead conversion and opportunity tracking.</li>
   <li><strong>Data Import and Export:</strong> Capable in importing and exporting data using tools like Dataloader, ensuring data accuracy and consistency.</li>
   <li><strong>User Support:</strong> Provides user support and training to help colleagues effectively utilize Salesforce Classic, resolve issues, and improve their efficiency.</li>
-</ul></p>   
-      
-      <img src="media/evergiving.png" alt="evergiving">
-        <h3>Evergiving</h3>
+</ul></p></p>
+        </div>
+        <div id="tab2" class="tabcontent">
+          <h3>Evergiving</h3>
+          <img src="media/evergiving.png" alt="evergiving">
         <p><ul>
   <li><strong>Web Application Expertise:</strong> Using the Waysact web application enabling me to effectively process and manage pledges and oversee the entire donor journey, including establishing detailed donor communication pathways.</li>
   <li><strong>Data Integration:</strong> Reconciling data between Evergiving and Salesforce, identifying discrepancies, and ensuring accuracy as well as skilled in manually exporting data from Evergiving to Salesforce.</li>
 </ul>
 </p>
-    <img src="media/civis.png" alt="civis">
-        <h3>Civis</h3>
+
+        </div>
+        <div id="tab3" class="tabcontent">
+          <h3>Civis</h3>
+          <p><img src="media/civis.png" alt="civis">
+     
         <ul>
   <li><strong>Data Management:</strong> Navigating Civis Analytics platforms to access and manage data.</li>
   <li><strong>Data Analysis:</strong> Able to perform simple calculations and transformations on data fields and familiar with generating basic statistical summaries and insights.</li>
   <li><strong>Report Navigation:</strong> Able to locate specific information and insights within reports and experienced in customizing views and filters to focus on relevant data.</li>
-</ul>
-    
-<img src="media/salesforce.png" alt="asana">
-        <h3>Asana</h3>
+</ul></p>
+        </div>
+        <div id="tab4" class="tabcontent">
+          <h3>Asana</h3>
+          <p><img src="media/asana.png" alt="asana">
         <ul>
   <li><strong>Task Creation:</strong> Able in creating tasks within Asana to track various activities and projects.</li>
   <li><strong>Deadline & Task Prioritization Setting:</strong> Skilled in setting deadlines and due dates for tasks to ensure timely completion also able to prioritize tasks based on urgency and importance, optimizing workflow efficiency.</li>
   <li><strong>Collaboration & Progress Tracking:</strong> Experienced in collaborating with team members by sharing tasks, comments, and updates within Asana as well as monitoring task progress and status updates to stay informed about project developments.</li>
-</ul>
-
-    
-    
-        <!-- Freelance & Part Time Projects -->
-        <div class="section-title">Freelance & Part Time Projects</div>
-        
-        <!-- Etiqa -->
-        <p><b>Etiqa</b></p>
-        <img src="Photo.jpg" alt="Photo">
-        <p>Description</p>
-        
-        <!-- Extracurriculars Project -->
-        <div class="section-title">Extracurriculars Project</div>
-        
-        <!-- ICT -->
-        <p><b>ICT</b></p>
-        <img src="Photo.jpg" alt="Photo">
-        <p>Description</p>
-        
-        <!-- Academic Projects -->
-        <div class="section-title">Academic Projects</div>
-        
-        <!-- IMR665 -->
-        <p><b>IMR665</b></p>
-        <img src="Photo.jpg" alt="Photo">
-        <p>Description</p>
-        
-        <!-- IMS457 -->
-        <p><b>IMS457</b></p>
-        <img src="Photo.jpg" alt="Photo">
-        <p>Description</p>
+</ul></p>
+        </div>
       </div>
       <div id="development">
         <h2 class="underline">Professional Development</h2>
@@ -226,5 +244,25 @@
       </div>
     </div>
   </div>
+  
+  <!-- JavaScript for tabs -->
+  <script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    // By default, open the first tab
+    document.getElementById("defaultOpen").click();
+  </script>
 </body>
 </html>
