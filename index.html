@@ -108,50 +108,12 @@
       }
     }
     /* Removed separator styles */
-    
     /* Adjust image size for specific images */
     #projects img,
     #portfolios img {
       max-width: 100%; /* Ensures the image does not exceed its container */
       height: auto; /* Maintains aspect ratio */
       width: 200px; /* Adjusted width to make smaller */
-    }
-
-    /* Tab styles */
-    .tab {
-      overflow: hidden;
-      border: 1px solid #ccc;
-      background-color: #f1f1f1;
-      margin-bottom: 20px;
-    }
-
-    /* Style the buttons that are used to open the tab content */
-    .tab button {
-      background-color: inherit;
-      float: left;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      padding: 14px 16px;
-      transition: 0.3s;
-    }
-
-    /* Change background color of buttons on hover */
-    .tab button:hover {
-      background-color: #ddd;
-    }
-
-    /* Create an active/current tablink class */
-    .tab button.active {
-      background-color: #ccc;
-    }
-
-    /* Style the tab content */
-    .tabcontent {
-      display: none;
-      padding: 6px 12px;
-      border: 1px solid #ccc;
-      border-top: none;
     }
   </style>
 </head>
@@ -179,55 +141,129 @@
       </div>
       <div id="portfolios">
         <h2 class="underline">Portfolios</h2>
-        <!-- Add tabs -->
-        <div class="tab">
-          <button class="tablinks" onclick="openTab(event, 'tab1')">Salesforce</button>
-          <button class="tablinks" onclick="openTab(event, 'tab2')">Evergiving</button>
-          <button class="tablinks" onclick="openTab(event, 'tab3')">Civis</button>
-          <button class="tablinks" onclick="openTab(event, 'tab4')">Asana</button>
+        <div class="section-title">Technical Skills</div>
+        <div>
+          <img src="media/salesforce.png" alt="salesforce">
+          <h3>1. Salesforce</h3>
+          <p>
+            <ul>
+              <li><strong>Data Management:</strong> Efficiently create, update, and manage records in Salesforce. This includes data entry, record editing, and maintaining data quality.</li>
+              <li><strong>Customization:</strong> Capable of customizing Salesforce Classic to meet specific business needs. This includes creating custom fields, objects, and page layouts. Plus, able to design and customize reports and dashboards.</li>
+              <li><strong>Reports and Dashboards:</strong> Ability to create and customize reports and dashboards in Salesforce Classic to provide actionable insights and analytics to the team.</li>
+              <li><strong>Lead and Opportunity Management:</strong> Managed leads and opportunities, including lead conversion and opportunity tracking.</li>
+              <li><strong>Data Import and Export:</strong> Capable in importing and exporting data using tools like Dataloader, ensuring data accuracy and consistency.</li>
+              <li><strong>User Support:</strong> Provides user support and training to help colleagues effectively utilize Salesforce Classic, resolve issues, and improve their efficiency.</li>
+            </ul>
+          </p>
         </div>
-        <!-- Add content for each tab -->
-        <div id="tab1" class="tabcontent">
-          <h3>Salesforce</h3>
-          <p><img src="media/salesforce.png" alt="salesforce">
-        <p><ul>
-  <li><strong>Data Management:</strong> Efficiently create, update, and manage records in Salesforce. This includes data entry, record editing, and maintaining data quality.</li>
-  <li><strong>Customization:</strong> Capable of customizing Salesforce Classic to meet specific business needs. This includes creating custom fields, objects, and page layouts. Plus, able to design and customize reports and dashboards.</li>
-  <li><strong>Reports and Dashboards:</strong> Ability to create and customize reports and dashboards in Salesforce Classic to provide actionable insights and analytics to the team.</li>
-  <li><strong>Lead and Opportunity Management:</strong> Managed leads and opportunities, including lead conversion and opportunity tracking.</li>
-  <li><strong>Data Import and Export:</strong> Capable in importing and exporting data using tools like Dataloader, ensuring data accuracy and consistency.</li>
-  <li><strong>User Support:</strong> Provides user support and training to help colleagues effectively utilize Salesforce Classic, resolve issues, and improve their efficiency.</li>
-</ul></p></p>
-        </div>
-        <div id="tab2" class="tabcontent">
-          <h3>Evergiving</h3>
+        <div>
           <img src="media/evergiving.png" alt="evergiving">
-        <p><ul>
-  <li><strong>Web Application Expertise:</strong> Using the Waysact web application enabling me to effectively process and manage pledges and oversee the entire donor journey, including establishing detailed donor communication pathways.</li>
-  <li><strong>Data Integration:</strong> Reconciling data between Evergiving and Salesforce, identifying discrepancies, and ensuring accuracy as well as skilled in manually exporting data from Evergiving to Salesforce.</li>
-</ul>
-</p>
+          <h3>2. Evergiving</h3>
+          <p>
+            <ul>
+              <li><strong>Web Application Expertise:</strong> Using the Waysact web application enabling me to effectively process and manage pledges and oversee the entire donor journey, including establishing detailed donor communication pathways.</li>
+              <li><strong>Data Integration:</strong> Reconciling data between Evergiving and Salesforce, identifying discrepancies, and ensuring accuracy as well as skilled in manually exporting data from Evergiving to Salesforce.</li>
+            </ul>
+          </p>
+        </div>
+        <div>
+          <img src="media/civis.png" alt="civis">
+          <h3>3. Civis</h3>
+          <p>
+            <ul>
+              <li><strong>Data Management:</strong> Navigating Civis Analytics platforms to access and manage data.</li>
+              <li><strong>Data Analysis:</strong> Able to perform simple calculations and transformations on data fields and familiar with generating basic statistical summaries and insights.</li>
+              <li><strong>Report Navigation:</strong> Able to locate specific information and insights within reports and experienced in customizing views and filters to focus on relevant data.</li>
+            </ul>
+          </p>
+        </div>
+        <div>
+          <img src="media/asana.png" alt="asana">
+          <h3>4. Asana</h3>
+          <p>
+            <ul>
+              <li><strong>Task Creation:</strong> Able in creating tasks within Asana to track various activities and projects.</li>
+              <li><strong>Deadline & Task Prioritization Setting:</strong> Skilled in setting deadlines and due dates for tasks to ensure timely completion also able to prioritize tasks based on urgency and importance, optimizing workflow efficiency.</li>
+              <li><strong>Collaboration & Progress Tracking:</strong> Experienced in collaborating with team members by sharing tasks, comments, and updates within Asana as well as monitoring task progress and status updates to stay informed about project developments.</li>
+            </ul>
+          </p>
+        </div>
+        <div class="section-title">Operation Executive</div>
+        <div>
+          <img src="media/roadrunner.png" alt="roadrunner">
+          <h3>1. RoadRunner – Enterprise ERP Software</h3>
+          <p>
+            <ul>
+              <li><strong>Financial Management:</strong> Used the system to manage involves accurate recording of income and expenses, generating financial reports, and maintaining an up-to-date ledger to optimize revenue.</li>
+              <li><strong>Tenant and Owner Data Management:</strong> Used system to manage tenants and property owners data and to provide important information such as lease agreements, rent payment history, and financial statements upon request.</li>
+              <li><strong>User Training and Support:</strong> Provide training and support to Sales Team for mobile version to ensures that all staff are proficient in its use, reducing errors and increasing productivity.</li>
+          </ul>
+          </p>
+        </div>
+        <div>
+          <img src="media/stiapps.png" alt="stiapps">
+          <h3>2. Sheng Tai International Apps – Hotel Room Booking Apps</h3>
+          <p>
+            <ul>
+              <li><strong>Point of Contact and Project Involvement:</strong> As the primary liaison between users/customers, management and apps vendor. Played a pivotal role in the development of the company's hotel booking app as participate in the User Acceptance Testing (UAT), identifying errors, and relaying feedback to the developer team. Additionally, managed backend administration, ensuring the accuracy and currency of user records.</li>
+              <li><strong>App Navigation and Customer Support:</strong> Proficient in navigating the hotel booking app, efficiently assist customers with reservations, including browsing available properties, checking room availability, and exploring booking options. Furthermore, provide exceptional customer support by addressing inquiries, resolving issues, and managing special requests to enhance the overall user experience.</li>
+              <li><strong>Booking Management:</strong> Managing bookings within the app, handling new reservations, modifying existing bookings, and processing cancellations or changes requested by guests. Additionally, collaborated with hotel staff in the backend to accommodate custom bookings, ensuring a personalized and seamless experience for guests.</li>
+              <li><strong>Point Redemption and Property Owner Interaction:</strong> Responsible for managing point redemption within the app, accurately deduct points earned by property owners when guests redeem them for bookings, ensuring the integrity of the point system.</li>
+          </ul>
+          </p>
+        </div>
+        
+        <div class="section-title">HR Operation Executive</div>
+        <div>
+          <img src="media/sap.png" alt="sap">
+          <h3>SAP SuccessFactor</h3>
+          <p>
+            <ul>
+              <li><strong>Performance Management:</strong> Utilize performance management modules to set and track performance goals, conduct appraisals, and provide continuous feedback to employees.</li>
+              <li><strong>Learning Management:</strong> Managed training and development initiatives using SuccessFactors' learning management system includes course creation, assigning training to employees, and tracking their progress and certifications.</li>
+              <li><strong>Employee Central:</strong> Maintained employee data including personal information, employment history, and organizational structure within SuccessFactors' Employee Central module and ensure accurate and up-to-date records.</li>
+          </ul>
+          </p>
+        </div>
 
+        <div class="section-title">Administrative Assistant Grade N19</div>
+        <div>
+          <h3>1. Standard Accounting for Government Agencies (SAGA)</h3>
+          <p>
+            <ul>
+              <li><strong>Financial Reporting:</strong> Producing timely and accurate financial statements that adhere to relevant accounting standards. This involves data entry and report generation.</li>
+              <li><strong>Regulatory Compliance:</strong> Ensuring that financial statements are in full compliance with the accounting standards and regulations that govern financial reporting.</li>
+              <li><strong>Technical Proficiency:</strong> Possessing the technical skills required to navigate SAGA effectively, including basic troubleshooting and liaising with the developer team for any issues that arise.</li>
+              <li><strong>Audit and Control:</strong> Implementing audit and control procedures to maintain the accuracy and integrity of financial data.</li>
+          </ul>          
+          </p>
         </div>
-        <div id="tab3" class="tabcontent">
-          <h3>Civis</h3>
-          <p><img src="media/civis.png" alt="civis">
-     
-        <ul>
-  <li><strong>Data Management:</strong> Navigating Civis Analytics platforms to access and manage data.</li>
-  <li><strong>Data Analysis:</strong> Able to perform simple calculations and transformations on data fields and familiar with generating basic statistical summaries and insights.</li>
-  <li><strong>Report Navigation:</strong> Able to locate specific information and insights within reports and experienced in customizing views and filters to focus on relevant data.</li>
-</ul></p>
+        <div>
+          <h3>2. Medical Register Information and Technical System (MeRITS)</h3>
+          <p>
+            <ul>
+              <li><strong>Data Management:</strong> Managing healthcare information within the system includes updating and maintaining practitioner records accurately.</li>
+              <li><strong>Regulatory Compliance:</strong> Ensuring that healthcare regulations and standards, such as continuing education requirements, are meticulously upheld.</li>
+              <li><strong>Effective Communication:</strong> Liaising with hospital administrators and various stakeholders to provide updates on the status of medical practitioners to ensure seamless coordination and adherence to regulatory standards within the healthcare system.</li>
+          </ul>          
+          </p>
         </div>
-        <div id="tab4" class="tabcontent">
-          <h3>Asana</h3>
-          <p><img src="media/asana.png" alt="asana">
-        <ul>
-  <li><strong>Task Creation:</strong> Able in creating tasks within Asana to track various activities and projects.</li>
-  <li><strong>Deadline & Task Prioritization Setting:</strong> Skilled in setting deadlines and due dates for tasks to ensure timely completion also able to prioritize tasks based on urgency and importance, optimizing workflow efficiency.</li>
-  <li><strong>Collaboration & Progress Tracking:</strong> Experienced in collaborating with team members by sharing tasks, comments, and updates within Asana as well as monitoring task progress and status updates to stay informed about project developments.</li>
-</ul></p>
+        
+        <div class="section-title">Medical Records Intern</div>
+        <div>
+          <img src="media/fisicien.png" alt="fisicien">
+          <h3>FiSiCien - Hospital Information System (HIS)</h3>
+          <p>
+            <ul>
+              <li><strong>Medical Records Management:</strong> Locating medical records within the FiSiCien system, facilitating quick retrieval for patient care.</li>
+              <li><strong>Tracking System Utilization:</strong> Utilizing FiSiCien's tracking system to monitor the whereabouts of medical records, whether they are stored in the records room or with attending physicians.</li>
+              <li><strong>ICD-10 Coding:</strong> Accurately keying in ICD-10 codes in alignment with patient diagnoses, ensuring compliance with medical coding standards.</li>
+              <li><strong>Data Maintenance:</strong> Maintaining up-to-date patient records within the FiSiCien system, ensuring that all relevant data is readily available for physicians during patient check-ups, thus enhancing efficiency and facilitating informed decision-making.</li>
+          </ul>
+          
+          </p>
         </div>
+        <!-- Additional portfolio items -->
       </div>
       <div id="development">
         <h2 class="underline">Professional Development</h2>
@@ -244,25 +280,5 @@
       </div>
     </div>
   </div>
-  
-  <!-- JavaScript for tabs -->
-  <script>
-    function openTab(evt, tabName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-      document.getElementById(tabName).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
-
-    // By default, open the first tab
-    document.getElementById("defaultOpen").click();
-  </script>
 </body>
 </html>
