@@ -30,7 +30,7 @@
       overflow-y: auto; /* Enable vertical scrolling for the sidepanel */
     }
     .sidepanel img {
-      width: 250px;
+      width: 150px; /* Adjusted width to make smaller */
       border-radius: 50%;
     }
     .sidepanel h1 {
@@ -108,6 +108,14 @@
       }
     }
     /* Removed separator styles */
+    
+    /* Adjust image size for specific images */
+    #projects img,
+    #portfolios img {
+      max-width: 100%; /* Ensures the image does not exceed its container */
+      height: auto; /* Maintains aspect ratio */
+      width: 200px; /* Adjusted width to make smaller */
+    }
   </style>
 </head>
 <body>
